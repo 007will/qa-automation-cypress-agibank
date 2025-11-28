@@ -164,11 +164,4 @@ O arquivo `data_hml.js` inclui variáveis como:
 
 Essas informações alimentam os cenários de teste.
 
-## 📌 Observações
 
-* Caso tenha enviado o projeto compactado, ele precisa ser descompactado para uso.
-* A estrutura mostrada no print é suficiente para gerar a documentação.
-
-## 📬 Suporte
-
-Em caso de dúvidas ou melhorias, sinta-se à vontade para abrir uma issue ou solicitar ajuda.
