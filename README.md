@@ -163,3 +163,6 @@ O arquivo `data_hml.js` inclui variáveis como:
 * `tituloNoticia`
 
 Essas informações alimentam os cenários de teste.
+
+Author José Willams
+https://github.com/007will/AgiBank
