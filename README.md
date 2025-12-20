@@ -164,5 +164,82 @@ O arquivo `data_hml.js` inclui variáveis como:
 
 Essas informações alimentam os cenários de teste.
 
-Author José Willams
-https://github.com/007will/AgiBank
+Author: José Willams
+🔗 https://github.com/007will/AgiBank
+
+---
+
+<details> <summary>🇺🇸 <strong>English</strong></summary>
+📁 Project Structure
+cypress/
+├── dataTest/
+│   └── data_hml.js        # Dynamic test data (Faker)
+├── e2e/
+│   └── agibank.cy.js      # End-to-End test scenarios
+├── fixtures/
+│   └── example.json       # Default fixture
+├── support/
+│   ├── commands.js        # Custom Cypress commands
+│   └── e2e.js             # Global configuration
+cypress.config.js           # Viewport, baseUrl and plugins
+package.json                # Dependencies and scripts
+
+🚀 Prerequisites
+
+Node.js (LTS recommended)
+
+npm or yarn
+
+⚙️ Cypress Configuration
+
+Configured in cypress.config.js:
+
+Viewport: 1920x1080
+
+Base URL: https://blog.agibank.com.br
+
+Plugins: configured via setupNodeEvents
+
+📦 Installation
+npm install
+# or
+yarn install
+
+Additional dependencies
+npm install --save-dev cypress-xpath
+npm install --save-dev @shelex/cypress-allure-plugin
+npm install --save-dev @faker-js/faker
+
+▶️ Running Tests
+Interactive mode
+npx cypress open
+
+Headless mode (CI/CD)
+npx cypress run
+
+🧪 Automated Scenarios
+
+Successful newsletter subscription
+
+Invalid email validation
+
+Existing email validation
+
+Blog news search
+
+🛠️ Custom Commands
+
+Designed to improve maintainability and scalability:
+
+acessarSiteAgibank()
+
+irParaNewsletters()
+
+cadastroNewsletters(email)
+
+pesquisarNoticia(titulo)
+
+Author: José Willams
+🔗 https://github.com/007will/AgiBank
+
+</details> ```
