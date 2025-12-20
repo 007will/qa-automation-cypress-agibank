@@ -169,77 +169,158 @@ Author: José Willams
 
 ---
 
-<details> <summary>🇺🇸 <strong>English</strong></summary>
-📁 Project Structure
+# 🚀 Cypress Automated Testing Project — AgiBank Challenge
+
+![Cypress](https://img.shields.io/badge/Cypress-Automation-green?logo=cypress)
+![QA](https://img.shields.io/badge/Quality-Assurance-blue)
+![Allure](https://img.shields.io/badge/Allure-Reports-orange)
+![CI/CD](https://img.shields.io/badge/CI%2FCD-Pipelines-brightgreen)
+
+This repository contains an automated test suite built with **Cypress**, focused on end-to-end testing of the **AgiBank Blog**.
+
+---
+
+<details open>
+<summary>🇧🇷 <strong>Português</strong></summary>
+
+## 📌 Visão Geral
+
+Projeto de testes automatizados utilizando **Cypress**, com foco em qualidade, reutilização de código, testes de API/UI e geração de relatórios.
+
+## 📁 Estrutura do Projeto
+
+```
 cypress/
 ├── dataTest/
-│   └── data_hml.js        # Dynamic test data (Faker)
+│   └── data_hml.js
 ├── e2e/
-│   └── agibank.cy.js      # End-to-End test scenarios
+│   └── agibank.cy.js
 ├── fixtures/
-│   └── example.json       # Default fixture
+│   └── example.json
 ├── support/
-│   ├── commands.js        # Custom Cypress commands
-│   └── e2e.js             # Global configuration
-cypress.config.js           # Viewport, baseUrl and plugins
-package.json                # Dependencies and scripts
+│   ├── commands.js
+│   └── e2e.js
+cypress.config.js
+package.json
+```
 
-🚀 Prerequisites
+## 🚀 Pré-requisitos
 
-Node.js (LTS recommended)
+- Node.js (LTS)
+- npm ou yarn
 
-npm or yarn
+## ⚙️ Configuração do Cypress
 
-⚙️ Cypress Configuration
+- Viewport: 1920x1080
+- BaseUrl: https://blog.agibank.com.br
+- Plugins via setupNodeEvents
 
-Configured in cypress.config.js:
+## 📦 Instalação
 
-Viewport: 1920x1080
-
-Base URL: https://blog.agibank.com.br
-
-Plugins: configured via setupNodeEvents
-
-📦 Installation
+```bash
 npm install
-# or
-yarn install
+```
 
-Additional dependencies
+### Dependências adicionais
+
+```bash
 npm install --save-dev cypress-xpath
 npm install --save-dev @shelex/cypress-allure-plugin
 npm install --save-dev @faker-js/faker
+```
 
-▶️ Running Tests
-Interactive mode
+## ▶️ Execução dos Testes
+
+```bash
 npx cypress open
-
-Headless mode (CI/CD)
+```
+```bash
 npx cypress run
+```
 
-🧪 Automated Scenarios
+## 🧪 Cenários Automatizados
 
-Successful newsletter subscription
+- Cadastro de newsletter com sucesso
+- Validação de e-mail inválido
+- Validação de e-mail já existente
+- Pesquisa de notícias
 
-Invalid email validation
+## 🛠️ Comandos Customizados
 
-Existing email validation
+- acessarSiteAgibank()
+- irParaNewsletters()
+- cadastroNewsletters(email)
+- pesquisarNoticia(titulo)
 
-Blog news search
+## 📄 Massa de Dados
 
-🛠️ Custom Commands
+data_hml.js:
+emailSucesso, emailInvalido, emailExistente, mensagemSucesso, mensagemErro, tituloNoticia
 
-Designed to improve maintainability and scalability:
-
-acessarSiteAgibank()
-
-irParaNewsletters()
-
-cadastroNewsletters(email)
-
-pesquisarNoticia(titulo)
-
-Author: José Willams
+👤 Autor: José Willams  
 🔗 https://github.com/007will/AgiBank
 
-</details> ```
+</details>
+
+---
+
+<details>
+<summary>🇺🇸 <strong>English</strong></summary>
+
+## 📌 Overview
+
+Automated testing project using **Cypress**, focused on quality, scalability and reporting.
+
+## 📁 Project Structure
+
+```
+cypress/
+├── dataTest/
+│   └── data_hml.js
+├── e2e/
+│   └── agibank.cy.js
+├── fixtures/
+│   └── example.json
+├── support/
+│   ├── commands.js
+│   └── e2e.js
+cypress.config.js
+package.json
+```
+
+## 🚀 Prerequisites
+
+- Node.js (LTS)
+- npm or yarn
+
+## ⚙️ Cypress Configuration
+
+- Viewport: 1920x1080
+- Base URL: https://blog.agibank.com.br
+
+## 📦 Installation
+
+```bash
+npm install
+```
+
+## ▶️ Running Tests
+
+```bash
+npx cypress open
+```
+```bash
+npx cypress run
+```
+
+## 🧪 Automated Scenarios
+
+- Successful newsletter subscription
+- Invalid email validation
+- Existing email validation
+- Blog search
+
+👤 Author: José Willams  
+🔗 https://github.com/007will/AgiBank
+
+</details>
