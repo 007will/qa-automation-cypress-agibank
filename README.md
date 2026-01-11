@@ -4,55 +4,42 @@ Este repositório contém uma suíte de testes automatizados utilizando **Cypres
 
 ## 📁 Estrutura do Projeto
 
-```
+```bash
 cypress/
 ├── dataTest/
-│   └── data_hml.js        # Massa dinâmica usando Faker para gerar e-mails e mensagens
+│   └── data_hml.js        # Massa dinâmica usando Faker
 ├── e2e/
-│   └── agibank.cy.js      # Cenários de testes E2E do blog Agibank
+│   └── agibank.cy.js      # Cenários E2E
 ├── fixtures/
-│   └── example.json       # Exemplo de fixture padrão
+│   └── example.json
 ├── support/
-│   ├── commands.js        # Comandos customizados (acesso, newsletter, busca)
-│   └── e2e.js             # Configuração global
-cypress.config.js           # Configuração: viewport, baseUrl, plugins
-package.json                # Dependências e scripts
-```
-**REFATORADO POSTERIORMENTE** 
+│   ├── commands.js
+│   └── e2e.js
+cypress.config.js
+package.json
+
+Estrutura do Projeto refatorado
+
 qa-automation-cypress-agibank/
-│
 ├── cypress/
 │   ├── e2e/
 │   │   ├── ui/
 │   │   │   ├── newsletter.cy.js
-│   │   │   └── search.cy.js
-│   │   │
 │   │   └── api/
 │   │       └── newsletter-api.cy.js
-│   │
-│   ├── fixtures/
-│   │   └── newsletter.json
-│   │
 │   ├── pages/
-│   │   ├── HomePage.js
 │   │   └── NewsletterPage.js
-│   │
-│   ├── support/
-│   │   ├── commands.js
-│   │   └── e2e.js
-│   │
-│   └── utils/
-│       └── dataFactory.js
-│
-├── .github/
-│   └── workflows/
-│       └── cypress.yml
-│
+│   ├── utils/
+│   │   └── dataFactory.js
+│   └── support/
+│       ├── commands.js
+│       └── e2e.js
+├── .github/workflows/
+│   └── cypress.yml
 ├── cypress.config.js
 ├── package.json
 └── README.md
 
-````
 
 ## 🚀 Pré-requisitos
 Certifique-se de ter instalado:
